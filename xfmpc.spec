@@ -1,6 +1,6 @@
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
-Version:	0.0.2
+Version:	0.0.3
 Release:	%mkrel 1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
@@ -27,6 +27,9 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 
 %makeinstall_std
 
+mkdir -p %{buildroot}%{_datadir}/applications
+install -m 644 %{SOURCE1} %{buildroot}%{_datadir}/applications
+
 %find_lang %{name}
 
 %post
@@ -50,3 +53,4 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 %defattr(-,root,root)
 %doc AUTHORS README ChangeLog
 %{_bindir}/xfmpc
+%{_datadir}/applications/*.desktop
