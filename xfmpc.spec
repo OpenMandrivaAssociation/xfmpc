@@ -1,12 +1,11 @@
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
-Version:	0.0.3
+Version:	0.0.5
 Release:	%mkrel 1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
 Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
-Source1:	%{name}.desktop
 BuildRequires:	libxfcegui4-devel
 BuildRequires:	libmpd-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -26,9 +25,6 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %makeinstall_std
-
-mkdir -p %{buildroot}%{_datadir}/applications
-install -m 644 %{SOURCE1} %{buildroot}%{_datadir}/applications
 
 %find_lang %{name}
 
