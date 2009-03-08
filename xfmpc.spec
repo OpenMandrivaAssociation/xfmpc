@@ -1,7 +1,7 @@
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
 Version:	0.0.7
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
