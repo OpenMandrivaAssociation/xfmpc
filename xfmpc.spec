@@ -7,7 +7,7 @@ Release:	%mkrel 1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
-Source0:	http://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	libxfce4ui-devel
 BuildRequires:	libxfce4util-devel
 BuildRequires:	libmpd-devel
