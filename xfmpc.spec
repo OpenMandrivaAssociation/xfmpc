@@ -3,7 +3,7 @@
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
 Version:	0.2.2
-Release:	4
+Release:	9
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
@@ -20,7 +20,7 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 
 %build
 %define Werror_cflags %nil
-%configure2_5x
+%configure
 
 %make
 
