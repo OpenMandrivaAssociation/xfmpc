@@ -2,14 +2,14 @@
 
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
-Version:	0.2.3
+Version:	0.3.0
 Release:	1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
 Source0:	http://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.11
-BuildRequires:	pkgconfig(libxfce4util-1.0) >= 4.11
+BuildRequires:	pkgconfig(libxfce4ui-2)
+BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libmpd)
 
 %description
@@ -22,10 +22,10 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 %define Werror_cflags %nil
 %configure
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name}
 
