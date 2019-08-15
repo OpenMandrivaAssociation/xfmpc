@@ -20,6 +20,7 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 
 %build
 %define Werror_cflags %nil
+%xdt_autogen
 %configure
 
 %make_build
