@@ -11,6 +11,8 @@ Source0:	http://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}-%{version}.ta
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libmpd)
+  
+Requires:	mpd  
 
 %description
 A MPD client focusing on low footprint for Xfce desktop environment.
