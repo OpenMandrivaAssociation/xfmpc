@@ -2,8 +2,8 @@
 
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
-Version:	0.3.0
-Release:	2
+Version:	0.3.1
+Release:	1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/applications/%{name}
