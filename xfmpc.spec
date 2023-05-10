@@ -31,7 +31,7 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS README ChangeLog
+%doc AUTHORS README* ChangeLog
 %{_bindir}/xfmpc
 %{_datadir}/applications/*.desktop
 %{_mandir}/man1/%{name}*
