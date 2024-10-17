@@ -6,7 +6,7 @@ Version:	0.3.1
 Release:	1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
-Url:		http://goodies.xfce.org/projects/applications/%{name}
+Url:		https://goodies.xfce.org/projects/applications/%{name}
 Source0:	http://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
