@@ -2,12 +2,14 @@
 
 Summary:	A MPD client focusing on low footprint for Xfce
 Name:		xfmpc
-Version:	0.3.2
+Version:	0.4.0
 Release:	1
 License:	BSD-like
 Group:		Graphical desktop/Xfce
 Url:		https://goodies.xfce.org/projects/applications/%{name}
 Source0:	https://archive.xfce.org/src/apps/xfmpc/%{url_ver}/%{name}-%{version}.tar.bz2
+
+BuildRequires:  meson
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libmpd)
@@ -22,13 +24,12 @@ A MPD client focusing on low footprint for Xfce desktop environment.
 
 %build
 %define Werror_cflags %nil
-#xdt_autogen
-%configure
+%meson
 
-%make_build
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %find_lang %{name}
 
