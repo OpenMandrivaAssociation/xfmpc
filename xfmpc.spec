@@ -13,6 +13,7 @@ BuildRequires:  meson
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libmpd)
+BuildRequires:  pkgconfig(vapigen)
   
 Requires:	mpd  
 
